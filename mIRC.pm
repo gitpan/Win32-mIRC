@@ -6,7 +6,7 @@ use warnings;
 BEGIN {
 	use Exporter();
 	use vars qw($VERSION @ISA @EXPORT @EXPORT_OK %EXPORT_TAGS $dde);
-	$VERSION     = 0.02;
+	$VERSION     = 0.03;
 	@ISA         = qw(Exporter);
 	@EXPORT      = qw();
 	@EXPORT_OK   = qw(
