@@ -1,0 +1,29 @@
+Win32/mIRC version 0.01
+=======================
+
+Win32::mIRC will allow you to communicate with mIRC via DDE.  
+
+INSTALLATION
+
+To install this module type the following:
+
+   perl Makefile.PL
+   make
+   make test
+   make install
+
+DEPENDENCIES
+
+This module requires these other modules and libraries:
+
+Win32::DDE::Client
+
+This module also requires that you have mIRC installed and running.
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2003 Matthew S. Musgrove muskrat@mindless.com
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself. 
+
