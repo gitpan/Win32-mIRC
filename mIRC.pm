@@ -139,11 +139,11 @@ Win32::mIRC - Communicate with mIRC via DDE
 
 =head1 SYNOPSIS
 
-#!/usr/bin/perl
+C<#!/usr/bin/perl
 use strict;
 use warnings;
 use Win32::mIRC qw( :all );
-connect('irc.zirc.org',6667,'#test',1);
+connect('irc.zirc.org',6667,'#test',1);>
 
 =head1 DESCRIPTION
 
@@ -157,16 +157,16 @@ This module provides functions for controlling mIRC via DDE.
 
 Returns a new mIRC COMMAND connection.  You can use this to Execute commands in mIRC.
 
-my $command = command();
-$command->Execute('/say Hello from Perl!');
+C<my $command = command();
+$command->Execute('/say Hello from Perl!');>
 
 =item evaluate 
 
 Returns a new mIRC EVALUATE connection.
 
-my $evaluate = evaluate();
+C<my $evaluate = evaluate();
 my $anick = $evaluate->Request('$anick');
-print "You're alternate nickname is $anick\n";
+print "You're alternate nickname is $anick\n";>
 
 =item connect(SERVER, PORT, CHANNEL, ACTIVE)
 
