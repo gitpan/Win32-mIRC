@@ -7,6 +7,6 @@ WriteMakefile(
     AUTHOR       => 'Matthew Musgrove (muskrat@mindless.com)',
     ABSTRACT     => 'Win32::mIRC',
     PREREQ_PM    => {
-        'Win32::DDE::Client'  => '0',
+        'Win32::DDE'  => '0.02',
     },
 );

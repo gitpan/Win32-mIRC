@@ -1,5 +1,7 @@
 Revision history for Perl module Win32::mIRC
 
+0.06 Tue Sep 02 12:30:38 2003
+  - Corrected PREREQ_PM version requirements
 0.05 Thu Aug 28 07:58:34 2003
   - Added PREREQ_PM to Makefile.pl
 0.04 Thu Aug 21 11:46:14 2003
