@@ -6,4 +6,7 @@ WriteMakefile(
     VERSION_FROM => 'mIRC.pm', # finds $VERSION
     AUTHOR       => 'Matthew Musgrove (muskrat@mindless.com)',
     ABSTRACT     => 'Win32::mIRC',
+    PREREQ_PM    => {
+        'Win32::DDE::Client'  => '0',
+    },
 );
