@@ -6,7 +6,7 @@ use warnings;
 BEGIN {
 	use Exporter();
 	use vars qw($VERSION @ISA @EXPORT @EXPORT_OK %EXPORT_TAGS $dde);
-	$VERSION     = 0.03;
+	$VERSION     = 0.04;
 	@ISA         = qw(Exporter);
 	@EXPORT      = qw();
 	@EXPORT_OK   = qw(
@@ -139,11 +139,11 @@ Win32::mIRC - Communicate with mIRC via DDE
 
 =head1 SYNOPSIS
 
-C<#!/usr/bin/perl
-use strict;
-use warnings;
-use Win32::mIRC qw( :all );
-connect('irc.zirc.org',6667,'#test',1);>
+  #!/usr/bin/perl
+  use strict;
+  use warnings;
+  use Win32::mIRC qw( :all );
+  connect('irc.zirc.org',6667,'#test',1);
 
 =head1 DESCRIPTION
 
@@ -157,16 +157,16 @@ This module provides functions for controlling mIRC via DDE.
 
 Returns a new mIRC COMMAND connection.  You can use this to Execute commands in mIRC.
 
-C<my $command = command();
-$command->Execute('/say Hello from Perl!');>
+  my $command = command();
+  $command->Execute('/say Hello from Perl!');
 
 =item evaluate 
 
 Returns a new mIRC EVALUATE connection.
 
-C<my $evaluate = evaluate();
-my $anick = $evaluate->Request('$anick');
-print "You're alternate nickname is $anick\n";>
+  my $evaluate = evaluate();
+  my $anick = $evaluate->Request('$anick');
+  print "You're alternate nickname is $anick\n";
 
 =item connect(SERVER, PORT, CHANNEL, ACTIVE)
 
@@ -268,10 +268,10 @@ None that I know of.
 
 =head1 AUTHOR
 
-	Matthew Musgrove
-	CPAN ID: MMUSGROVE
-	E<lt>muskrat@mindless.comE<gt>
-	L<http://mrmuskrat.perlmonk.org>
+Matthew Musgrove
+CPAN ID: MMUSGROVE
+E<lt>muskrat@mindless.comE<gt>
+L<http://mrmuskrat.perlmonk.org>
 
 =head1 COPYRIGHT
 
