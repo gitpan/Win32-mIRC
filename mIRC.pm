@@ -6,7 +6,7 @@ use warnings;
 BEGIN {
 	use Exporter();
 	use vars qw($VERSION @ISA @EXPORT @EXPORT_OK %EXPORT_TAGS $dde);
-	$VERSION     = 0.01;
+	$VERSION     = 0.02;
 	@ISA         = qw(Exporter);
 	@EXPORT      = qw();
 	@EXPORT_OK   = qw(
@@ -139,7 +139,11 @@ Win32::mIRC - Communicate with mIRC via DDE
 
 =head1 SYNOPSIS
 
-coming soon...
+#!/usr/bin/perl
+use strict;
+use warnings;
+use Win32::mIRC qw( :all );
+connect('irc.zirc.org',6667,'#test',1);
 
 =head1 DESCRIPTION
 
@@ -151,11 +155,18 @@ This module provides functions for controlling mIRC via DDE.
 
 =item command
 
-Returns a new mIRC COMMAND connection.
+Returns a new mIRC COMMAND connection.  You can use this to Execute commands in mIRC.
+
+my $command = command();
+$command->Execute('/say Hello from Perl!');
 
 =item evaluate 
 
 Returns a new mIRC EVALUATE connection.
+
+my $evaluate = evaluate();
+my $anick = $evaluate->Request('$anick');
+print "You're alternate nickname is $anick\n";
 
 =item connect(SERVER, PORT, CHANNEL, ACTIVE)
 
